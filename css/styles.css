@@ -8,6 +8,15 @@
   color:#737373;
 }
 
+img.gameon {
+  width:fit-content;
+  height:300px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* main site hamburger Menu */
 #menuToggle
 {
@@ -121,12 +130,6 @@
   transform: none;
 }
 
-  .welcome {
-    margin-top: 400px;
-    padding: 2%;
-
-  }
-
 /* site Body */
 
 .body{
@@ -147,40 +150,11 @@
   text-align: center;
   }
 
-  
-/* Choice Text game */
 
 body {
   font-size: 1.6em;
   
 }
-
-#images {
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 1em;
-}
-
-
-  #input {
-    width: 100%;
-    height: 30px;
-    text-align:center;
-    font-size: 1em;
-    margin-top:15px;
-  }
-  
-  #buttonBox {
-    text-align:center;
-  }
-  
-  button{
-    margin-left: 10px;
-    margin-top: 15px;
-    height: 22px;
-    font-size: 14px;
-  }
 
 
 /* Bottom Page Nav */
@@ -212,6 +186,7 @@ body {
       text-align: center;
       margin-left: 30%;
       margin-right:30%;
+      padding: 2%;
     }
     
     .intro{
