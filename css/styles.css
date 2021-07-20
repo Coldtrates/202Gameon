@@ -139,22 +139,6 @@ img.gameon {
   color:#737373;
 }
 
-/* translator google script */
-.translator{
-  text-align: center;
-  padding: 2%;
-  }
-  
-  .translator-text{
-  text-align: center;
-  }
-
-
-body {
-  font-size: 1.6em;
-  
-}
-
 /* photo gal */
 div.gallery {
   margin: 2% 2%;
