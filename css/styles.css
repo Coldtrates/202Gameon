@@ -1,5 +1,6 @@
 /* need to get better at shorthand */
 
+
 .title{
   text-align: center;
   background-color:#26272b;
@@ -140,27 +141,50 @@ img.gameon {
 }
 
 /* photo gal */
-div.gallery {
-  margin: 2% 2%;
+
+#photos {
+  opacity: .88;
+}
+
+#photos img {
+  width: 30%;
   float: left;
-  width: 80px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2px;
 }
 
-div.desc {
-  padding: 15px;
+ul {
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 780px;
   text-align: center;
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
 }
 
 /* Bottom Page Nav */
@@ -217,27 +241,6 @@ div.desc {
 
 /* media querys */ 
 
-@media only screen and (max-width:800px){
-  section{
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  }
-      
-  }
-
-@media only screen and (max-width:1080px){
-  section{
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-  }
-
-  }
-
     .responsive {
       padding: 0 6px;
       float: left;
@@ -248,11 +251,39 @@ div.desc {
       .responsive {
         width: 49.99999%;
         margin: 6px 0;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
       }
     }
     
     @media only screen and (max-width: 500px){
       .responsive {
         width: 100%;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
       }
     }
+
+    /* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
